@@ -29,9 +29,15 @@ public class CalculadoraFahrenheit {
         }
 
         //Entradas de Fahrenheit para Celsius
+        if (option == 2){
+            System.out.print("Informe a temperatura em °F: ");
+            fah = entrada.nextDouble();
 
         //Processamento Fahrenheit para Celsius
+        cel = (fah - 32) * 5 / 9;
 
         //Saída Fahrenheit para Celsius
+        System.out.println("\n" + fah + "°F= " + cel + "°C\n");
+        }
     }
 }
