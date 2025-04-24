@@ -7,11 +7,12 @@ public class CalculadoraFahrenheit {
 
         //Criação e instância do objet0 de entrada
         Scanner entrada = new Scanner(System.in);
-        
+    do{
         //Apresentação
         System.out.println("\n\t\t\t -- Conversor --\n");
         System.out.println("1. Celsius para Fahrenheit.");
         System.out.println("2. Fahrenheit para Celsius");
+        System.out.println("3. Sair");
 
         System.out.println("Opção: ");
         option = entrada.nextInt();
@@ -37,7 +38,21 @@ public class CalculadoraFahrenheit {
         cel = (fah - 32) * 5 / 9;
 
         //Saída Fahrenheit para Celsius
-        System.out.println("\n" + fah + "°F= " + cel + "°C\n");
+        System.out.println("\n" + fah + "°F = " + cel + "°C\n");
         }
+            //Saída caso 3
+            if (option == 3){
+                System.out.println("Forte Abraço!");
+                }
+            //Saída caso usuário bisonho.
+            else if (option > 3 ){
+                System.out.println("Escolha uma opção correta, meu chapinha.");
+            }
+            
+            else if (option < 1 ){
+                System.out.println("Escolha uma opção correta, meu chapinha.");
+            }
+
+        }while(option != 3);
     }
 }
